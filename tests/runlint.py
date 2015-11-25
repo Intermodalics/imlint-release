@@ -34,7 +34,7 @@
 """
 Run a specified linter in a subprocess, checking its return status.
 
-This is a unit test script for roslint.
+This is a unit test script for imlint.
 """
 
 from __future__ import print_function

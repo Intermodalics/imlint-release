@@ -1,6 +1,10 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package roslint
+Changelog for package imlint
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+0.11.0 (2015-11-25)
+-------------------
+* Forked roslint and applied changes to check for Intermodalics (almost Google) style
 
 0.10.0 (2015-08-07)
 -------------------
