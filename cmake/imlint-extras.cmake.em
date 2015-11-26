@@ -52,7 +52,8 @@ function(imlint_cpp)
   if (NOT DEFINED IMLINT_CPP_CMD)
     set(IMLINT_CPP_CMD ${IMLINT_SCRIPTS_DIR}/cpplint)
   endif()
-  imlint_custom("${IMLINT_CPP_CMD}" "${IMLINT_CPP_OPTS}" ${ARGN})
+  set(CPPLINT_ROOT ${PROJECT_NAME})
+  imlint_custom("${IMLINT_CPP_CMD}" "--root=${PROJECT_NAME}" "${IMLINT_CPP_OPTS}" ${ARGN})
 endfunction()
 
 # Run pep8 on a list of file names.
