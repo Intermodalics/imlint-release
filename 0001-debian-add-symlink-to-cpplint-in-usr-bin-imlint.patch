@@ -1,0 +1,20 @@
+From ab57db1ab97d8583fe6e0b247d572f11032b6860 Mon Sep 17 00:00:00 2001
+From: Johannes Meyer <johannes@intermodalics.eu>
+Date: Thu, 26 Nov 2015 18:20:11 +0100
+Subject: [PATCH] debian: add symlink to cpplint in /usr/bin/imlint
+
+---
+ debian/links | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 debian/links
+
+diff --git a/debian/links b/debian/links
+new file mode 100644
+index 0000000..91a90a3
+--- /dev/null
++++ b/debian/links
+@@ -0,0 +1 @@
++usr/lib/imlint/cpplint usr/bin/imlint
+-- 
+1.9.1
+
