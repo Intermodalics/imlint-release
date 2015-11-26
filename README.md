@@ -37,8 +37,7 @@ package. Each additionally creates (if it does not yet exist) a master
 ```imlint``` target, which depends on all other imlint_* targets.
 
 Each function can be called multiple times, if that's more convenient.
-
-  *```imlint_cpp([files ...])```
+  * ```imlint_cpp([files ...])```
   Lint the specified files using a modified cpplint. If none are specified, default to a glob of all cpp and h files contained in the package.
   * ```imlint_python([files ...])```
   Lint the specified files using pep8. If none are specified, default to a glob of all py files contained in the package. This will not catch extensionless executables living in the scripts directory.
