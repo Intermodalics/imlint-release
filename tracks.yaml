@@ -21,13 +21,8 @@ tracks:
     version: :{auto}
   xenial:
     actions:
-    - bloom-export-upstream :{vcs_local_uri} :{vcs_type} --tag :{release_tag} --display-uri
-      :{vcs_uri} --name :{name} --output-dir :{archive_dir_path}
-    - git-bloom-import-upstream :{archive_path} :{patches} --release-version :{version}
-      --replace
-    - git-bloom-generate -y release --source upstream -i :{release_inc}
     - git-bloom-generate -y debian --prefix release --match-all -i :{release_inc}
-      --distros trusty
+      --distros xenial
     devel_branch: intermodalics
     last_version: 0.11.0
     name: upstream
