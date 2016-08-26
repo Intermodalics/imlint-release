@@ -1,3 +1,3 @@
 [git-buildpackage]
-upstream-tag=release/imlint/0.11.0-1
+upstream-tag=@(release_tag)
 upstream-tree=tag

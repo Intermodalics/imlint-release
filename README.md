@@ -4,14 +4,17 @@ imlint
 Catkin macros which provide standard linter configurations for C++ and Python.
 
 # Usage
-Add a build dependency on imlint to your package's package.xml:
+Add a test dependency on imlint to your package's package.xml:
 ```
-<build_depend>imlint</build_depend>
+<test_depend>imlint</test_depend>
 ```
+**Note:** It is recommended to use version 2 of the package manifest format ([REP-140](http://www.ros.org/reps/rep-0140.html)) for correct handling of dependencies specified in the `<test_depend>` element.
+
 In your package's CMakeLists.txt file, include imlint as one of your catkin
-component dependencies:
+component dependencies, ideally you put all imlint related cmake code within a 
+```if (CATKIN_ENABLE_TESTING) ... endif()``` block:
 ```
-find_package(catkin REQUIRED COMPONENTS imlint ...)
+find_package(imlint REQUIRED)
 ```
 Then, invoke the imlint functions from your CMakeLists.txt, eg:
 ```
