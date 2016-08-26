@@ -1,4 +1,4 @@
-From fadd93452e9836e21e46de0e172f1c89c2ac7050 Mon Sep 17 00:00:00 2001
+From a135f67a8507a4e6b93c780307a1344c000b5063 Mon Sep 17 00:00:00 2001
 From: Johannes Meyer <johannes@intermodalics.eu>
 Date: Thu, 26 Nov 2015 18:20:11 +0100
 Subject: [PATCH] debian: add symlink to cpplint in /usr/bin/imlint
